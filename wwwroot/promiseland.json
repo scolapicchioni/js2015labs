@@ -1,0 +1,10 @@
+﻿{
+  "title": "Welcome to Promiseland",
+  "chapterUrls": [
+    "./Foreword.json",
+    "./Introduction.json",
+    "./Chapter01.json",
+    "./Chapter02.json",
+    "./Chapter03.json"
+  ]
+}
