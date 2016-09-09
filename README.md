@@ -16,9 +16,22 @@
     *   Type 
         * dotnet restore
         * dotnet run
-*   Open your browser and go to http://localhost:5000
+*   Open your browser and go to 
+    *   http://localhost:5000/Lab02.html
+    *   http://localhost:5000/Lab03.html
+    *   http://localhost:5000/Lab04.html
+    *   http://localhost:5000/Lab05.html
+    *   http://localhost:5000/Lab06_01.html
+    *   http://localhost:5000/Lab06_02.html
+    *   http://localhost:5000/Lab07.html
+    *   http://localhost:5000/Lab08.html
+    *   http://localhost:5000/Lab09.html
+    *   http://localhost:5000/Lab10.html
+    *   http://localhost:5000/Lab11.html
+    *   http://localhost:5000/Lab12.html
+    *   http://localhost:5000/Lab13.html
 
-## Inspect the content
+## Inspect the source content
 
 *   You can find the HTMLPages under the wwwroot folder
 *   You can find the javascript files under the wwwroot/js folder
