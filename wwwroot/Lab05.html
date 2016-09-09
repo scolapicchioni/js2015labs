@@ -7,5 +7,30 @@
 <body>
     <!--<script src="js/lab05.min.js"></script>-->
     <script src="js/lab05.bundle.js"></script>
+
+<h1>Lab 5 – objects</h1>
+Write a CreateCustomer function that accepts the following parameters:
+<code>
+CreateCustomer(id, name, city)
+</code>
+The functions returns an object that has the following properties:
+<code>
+id, name, city, nrOfUnpaidBills
+</code>
+and the methods:
+<code>
+buyStuff(), payBill()
+</code>
+When a Customer is created, the nrOfUnpaidBills equals 0. Each time buyStuff() is called, the nrOfUnpaidBills is increased by 1, and each time payBill() is called, the nrOfUnpaidBills is decreased by 1.
+Add a method
+<code>
+badPayer(int n)
+</code>
+that returns true,   if the nrOfUnpaidBills is n or more
+and returns false,  otherwise.
+Override the toString() method for Customer objects. It should return id, name, and city, formatted like:
+<code>
+	"(id) name - city"
+</code>
 </body>
 </html>

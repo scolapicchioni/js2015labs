@@ -8,5 +8,48 @@
     <!--<script src="js/polyfill.js"></script>
     <script src="js/lab09.min.js"></script>-->
     <script src="js/lab09.bundle.js"></script>
+
+<h1>Lab 9 – Iterators and generators</h1>
+
+<ul>
+    <li>A Customer has an id, a name, a city and set of bills, divided in two piles: the paid ones and the unpaid ones.</li>
+    <li>When the customer gets a new bill, the bill goes to the unpaid pile.</li>
+    <li>When the customer pays a bill, the bill gets transferred to the unpaid pile.</li>
+    <li>Each bill has a unique identifier and an amount to be paid.</li>
+</ul>
+
+You have to be able to use your application like this:
+
+<code>
+let c1 = createCustomer(1,"Mario","Roma");
+c1.bills.add({number: "ab123", amount : 123});
+c1.bills.add({number: "cd456", amount : 456});
+c1.bills.add({number: "ef789", amount : 789});
+c1.bills.add({number: "gh012", amount : 128});
+c1.bills.add({number: "ij386", amount : 946});
+
+console.log("*********unpaid***********");
+for(let b of c1.bills.unpaid()){
+    console.log(b.number, b.amount);
+}
+
+c1.bills.pay("ef789");
+c1.bills.pay("cd456");
+
+console.log("*********unpaid***********");
+for(let b of c1.bills.unpaid()){
+    console.log(b.number, b.amount);
+}
+
+console.log("*********paid***********");
+for(let b of c1.bills.paid()){
+    console.log(b.number, b.amount);
+}
+</code>
+
+<blockquote>
+NOTE:  You will need the polyfill.js file from a Babel polyfill installation. The easiest way to get this is to run npm install babel-polyfill (you already did this during lab1), then copy the polyfill.js file from the dist directory in the installed module.
+Once you have polyfill.js, include it in your page via a script tag. In order for the polyfill to work, it must be included before any compiled ES2015 code from Babel.
+</blockquote>
 </body>
 </html>

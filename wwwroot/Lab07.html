@@ -7,5 +7,33 @@
 <body>
     <!--<script src="js/lab07.js"></script>-->
     <script src="js/lab07.bundle.js"></script>
+
+<h1>Lab 7 - Symbols</h1>
+With the help of the Symbol.toPrimitive property (used as a function value), an object can be converted to a primitive value. The function is called with a string argument hint, which specifies the preferred type of the result primitive value. The hint argument can be one of "number", "string", and "default".<br>
+
+<ul>
+    <li>
+        <ul>
+            <li>Create an empty object obj1.</li>
+            <li>Convert obj1 to a number using the unary plus (+) operator. Log the result to the console.</li>  
+            <li>Log to the console the value of obj1 using a string literal.</li>
+            <li>Compare obj1 with 0 using the == operator. Log the result to the console.</li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+            <li>Create an object obj2.</li>
+            <li>Override the Symbol.toPrimitive function to return:</li>
+            <li>10 if the hint is “number”</li>
+            <li>“hello” if hint is “string”</li>
+            <li>true otherwise</li>
+            <li>Convert obj2 to a number using the unary plus (+) operator. Log the result to the console.</li>  
+            <li>Log to the console the value of obj2 using a string literal.</li>
+            <li>Compare obj2 with 0 using the == operator. Log the result to the console.</li>
+        </ul>
+    </li>
+</ul>
+WARNING: do not transpile the script using Babel, since it does not support Symbol.toPrimitive. Use Chrome,Firefox or Edge instead to test the JavaScript 6 syntax.
+
 </body>
 </html>
